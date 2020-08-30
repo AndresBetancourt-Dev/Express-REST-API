@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Rest API using Express JS",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "nodemon src/index.js",
+    "hello" : "echo Hello World"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresBetancourt-Dev/Express-REST-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndresBetancourt-Dev/Express-REST-API/issues"
+  },
+  "homepage": "https://github.com/AndresBetancourt-Dev/Express-REST-API#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
