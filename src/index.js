@@ -1,9 +1,12 @@
-require('dotenv').config();
-const app = require('./app');
-require('./database');
+require("dotenv").config();
+require("./database");
+const app = require("./app");
 
-async function main(){
-    await app.listen(app.get('port'));
-    console.log(`Connection on Port ${app.get('port')}`);
+async function main() {
+  try {
+    await app.listen(app.get("port"));
+  } catch (error) {
+    console.log(error.message);
+  }
 }
 main();
